@@ -26,6 +26,9 @@ This is a crowdfunding platform for games with a developer theme. The applicatio
 - For frontend changes, verify the build (`npm run build`) directly, and run the end-to-end tests through the `quality-checks` skill, to ensure everything works correctly
 - When changing the data layer (schema, helpers, transforms), update and run the corresponding unit tests
 
+- Every exported function should have a TSDoc comment describing its purpose, parameters, and return value.
+- Before imports or any code, add a comment block to the file that explains its purpose.
+
 #### Project guidelines
 
 - When updating the database schema, generate and commit the drizzle-kit migration (`npm run db:generate`)
